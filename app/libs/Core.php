@@ -3,9 +3,23 @@
 
 class Core
 {
+    protected $currentController = 'Pages';
+    protected  $currentMethod = 'index';
+    protected $params = [];
     //constructor
-    public function __construct(){
-        $this->getUrl();
+    public function __construct()
+    {
+        $url = $this->getUrl();
+        $controllerName = ucwords($url[0]);
+        $controllerFile = '../app/controllers/'.$controllerName.'.php';
+        if(file_exists($controllerFile)){
+            $this->currentController = $controllerName;
+            unset($url[0]);
+        }
+        require_once  '../app/controllers/' .$this->currentController.'.php';
+        $this->currentController = new $this->currentController;
+        print_r($this->currentController);
+        print_r($url);
     }
     // get url data
     public function  getUrl() {
@@ -15,7 +29,7 @@ class Core
             $url = htmlentities($url);
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
-            print_r($url);
+            //print_r($url);
             return $url;
         }
     }
