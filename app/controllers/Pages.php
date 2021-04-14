@@ -9,7 +9,7 @@ class Pages extends Controller
      */
     public function __construct()
     {
-        //echo 'Pages Class is loaded<br>';
+        $this->pagesModel = $this->model('Page');
     }
 
     public function index(){
