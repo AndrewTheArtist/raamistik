@@ -10,5 +10,5 @@ define('URLROOT','http://'.$_SERVER['HTTP_HOST']. '/'.PROJECT_NAME);
 define('DB_HOST', 'localhost');
 define('DB_USER', 'Yuser');
 define('DB_PASS', 'gigaheadpass');
-define('DB_NAME', 'raamistik');
+define('DB_NAME', 'firmad');
 
