@@ -3,7 +3,7 @@
 
 class Core
 {
-    protected $currentController = 'Pages';
+    protected $currentController = 'Partners';
     protected  $currentMethod = 'index';
     protected $params = [];
     //constructor
