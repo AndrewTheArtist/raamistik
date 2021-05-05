@@ -7,8 +7,8 @@ define('URLROOT','http://'.$_SERVER['HTTP_HOST']. '/'.PROJECT_NAME);
 
 
 // db params
-define('DB_HOST', 'host');
-define('DB_USER', 'user');
-define('DB_PASS', 'pass');
-define('DB_NAME', 'dbname');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'Yuser');
+define('DB_PASS', 'gigaheadpass');
+define('DB_NAME', 'raamistik');
 
