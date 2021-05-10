@@ -1,8 +1,4 @@
 <?php require_once APPROOT.'/views/inc/header.php'; ?>
-<?php
-echo '<pre>';
-print_r($data);
-?>
 <h1><?php echo $data['title'];?></h1>
 <!--Tabel-->
     <table class="table table-striped">
@@ -18,33 +14,17 @@ print_r($data);
         </tr>
         </thead>
         <tbody>
+        <?php foreach ($data['partners'] as $partner):?>
         <tr>
-            <th scope="row">1</th>
-            <td>Joe Mama</td>
-            <td>1600 Pennsylvania, Washington, D.C.</td>
-            <td>Koogid</td>
-            <td>53475623</td>
-            <td>joe@mama.com</td>
-            <td>EE4932382</td>
+            <th scope="row"><?php echo $partner->firma_id;?></th>
+            <td><?php echo $partner->nimi;?></td>
+            <td><?php echo $partner->asukoht;?></td>
+            <td><?php echo $partner->eriala;?></td>
+            <td><?php echo $partner->telefon;?></td>
+            <td><?php echo $partner->epost;?></td>
+            <td><?php echo $partner->vat;?></td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Michael's Meathouse</td>
-            <td>P. Sherman, 42 Wallaby Way, Sydney</td>
-            <td>Lihatooted</td>
-            <td>+61 7845 6273</td>
-            <td>michael@localhost</td>
-            <td>ABN89493238237</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Jackson's Pastries</td>
-            <td>92 Avenue Paul Doumer, 75016 Paris, France</td>
-            <td>Pagaritooted</td>
-            <td>202-456-1111</td>
-            <td>comments@whitehouse.gov</td>
-            <td>DE999999999</td>
-        </tr>
+        <?php endforeach;?>
         </tbody>
     </table>
 <!--Tabel-->
