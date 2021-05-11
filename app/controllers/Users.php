@@ -42,16 +42,27 @@ class Users extends Controller
             }
             if(empty($data['confirm_password'])){
                 $data['confirm_password_err'] = 'Please enter the confirm password';
-            } else if(strlen($data['password']) < 6) {
-                $data['password_err'] = 'Password must consist of at least 6 characters';
+            } else if(strlen($data['confirm_password']) < 6) {
+                $data['confirm_password_err'] = 'Password must consist of at least 6 characters';
             } else if($data['password'] !== $data['confirm_password']) {
-                $data['password_err'] = 'Passwords do not match';
+                $data['confirm_password_err'] = 'Passwords do not match';
             }
-            print_r($data);
+
 
         }else {
-            $this->view('users/register');
+            $data = array(
+                'name' =>'',
+                'email' =>'' ,
+                'password' =>'' ,
+                'confirm_password' =>' ',
+                'name_err' => '',
+                'email_err' => '',
+                'password_err' => '',
+                'confirm_password_err' => '',
+            );
+
         }
+        $this->view('users/register', $data);
     }
 
     public function  login(){
