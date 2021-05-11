@@ -48,10 +48,10 @@ class Users extends Controller
                 $data['confirm_password_err'] = 'Passwords do not match';
             }
 
-
             if(empty($data['name_err']) and empty($data['email_err']) and empty($data['password_err']) and empty($data['confirm_password_err'])){
                 $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
                 if($this->usersModel->register($data)){
+                    message('register_success', 'You are registered and can now log in');
                     header('Location: '.URLROOT.'/'.'users/login');
                 }else {
                     die('Something went wrong');
@@ -62,7 +62,7 @@ class Users extends Controller
                 'name' =>'',
                 'email' =>'' ,
                 'password' =>'' ,
-                'confirm_password' =>' ',
+                'confirm_password' =>'',
                 'name_err' => '',
                 'email_err' => '',
                 'password_err' => '',
