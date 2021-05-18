@@ -119,9 +119,17 @@ class Users extends Controller
         $this->view('users/login', $data);
     }
 
+    public  function logout(){
+        session_unset();
+        session_destroy();
+        header('Location:'.URLROOT.'/'.'users/login');
+    }
+
     public function  createUserSession($user){
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_name'] = $user->name;
         $_SESSION['user_email'] = $user->email;
     }
+
+
 }
