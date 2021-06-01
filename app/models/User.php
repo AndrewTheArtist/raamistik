@@ -40,7 +40,7 @@ class User
         }
     }
 
-    public  function  login($email, $password){
+    public function login($email, $password){
         $this->db->query('SELECT * FROM users WHERE email=:email');
         $this->db->bind(':email', $email);
         $user = $this->db->getOne();

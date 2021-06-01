@@ -1,9 +1,21 @@
 
+<!--<footer>
+    <div class="footer-div">
+        <div class="corps">©2021ロンドンの女性料理本部 <br>ロンドン市長 </div>
+    </div>
 
-</div>
+    <div class="footer-div">
+        <div class="footer-logo"> 料理本社 </div>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="<?php echo URLROOT;?>/public/js/main.js"></script>
+    <div class="footer-div">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-snapchat-ghost"></a>
+
+    </div>
+</footer> -->
+<script src="<?php echo URLROOT;?>/public/js/main.js" defer></script>
 </body>
 </html>

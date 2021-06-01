@@ -1,0 +1,465 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+html, body {
+    font-family: 'Dosis';
+    font-weight: 300;
+    background: #ededed;
+    margin: 0;
+}
+
+
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: right;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    font-size: 32px;
+    font-weight: 200;
+    padding: 26px;
+    border-right: 1px solid black;
+}
+
+.sabmit {
+    width: 70%;
+    text-align: center;
+    background: white;
+    border:0.125em solid black;
+    font-size: 22px;
+    letter-spacing: 0.125em;
+    margin: 1% 15% 0 15%;
+    padding: 0.5em 0.75em;
+    position: relative;
+}
+
+
+.link {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 55px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.bar {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.link:hover .bar {
+    opacity: 1;
+    bottom: 5px;
+}
+
+
+/* This is where navbar stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where register form stuff begins*/
+
+#registration-login-form legend {
+    text-align: center;
+    background: black;
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    font-size:2em;
+}
+
+.message {
+    text-align: center;
+    background: black;
+    color: white;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.fieldset{
+    margin:5% 30% 0 30%;
+    display:block;
+    width:40%;
+    box-sizing:border-box;
+}
+
+
+.placeholder #registration-form label {
+    display: none;
+}
+.text-line{
+    background: transparent;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+}
+
+label {
+    margin-bottom: 5px;
+
+}
+
+ .audio-m{
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 3% 20% 24px 20%;
+     font-size: 22px;
+}
+.no-placeholder #registration-form label{
+    margin-left:5px;
+    position:relative;
+    display:block;
+    color:grey;
+    text-shadow:0 1px white;
+    font-weight:bold;
+}
+
+
+#registration-form input[type=submit]:hover {
+    background-color: lightslategray;
+}
+
+
+#registration-form select{
+    width:100%;
+    padding:5px;
+}
+::-moz-focus-inner {
+    border: 0;
+}
+
+/* This is where register and log in  form stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where footer  stuff begins*/
+footer {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    height: 220px;
+    width: 1920px;
+    margin: 0;
+}
+.footer-div {
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    margin: 30px 180px 0 60px;
+}
+
+ .footer-text {
+     margin: 80px 0 0 240px;
+     font-size: 32px;
+     font-weight: lighter;
+ }
+
+ .footer-logo {
+     border-bottom: 1px solid white;
+ }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 50%;
+}
+
+
+/* This is where footer stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where  data table stuff begins*/
+
+.partner-title{
+    width: 80%;
+    margin: 5% 10% 2% 10%;
+    text-align: left;
+    border: 1px solid black;
+
+}
+
+.partner-text {
+    margin-left: 70px;
+    width: 1100px;
+    margin-right: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#theButton, #theButton2, #theButton3 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shade {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    transition-duration: 1s;
+}
+
+.form-div {
+    position: absolute;
+    top: -525px;
+    margin-left: 560px;
+    transition-duration: 1s;
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid red ;
+}
+
+.form2-div {
+    position: absolute;
+    top: -1000px;
+    margin-left: 560px;
+    transition-duration: 1s;
+    height: 923px;
+    width: 800px;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid green ;
+}
+
+/* This is where  data table stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where  add and delete firm form stuff begins*/
+
+
+.delete-firm-title, .add-firm-title {
+    position: center;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    background: black;
+    width:50%;
+    padding: 12px;
+    margin: 4% 25% 0 25% ;
+}
+
+.delete-firm-text, .add-firm-text {
+    position: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* This is where  add and delete firm form stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where  faq  stuff begins*/
+
+
+details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+details + details {
+    margin-top: 20px;
+}
+
+details[open] {
+    min-height: 50px;
+    background-color: #f6f7f8;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+    color: #96999d;
+    font-weight: 300;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+
+}
+
+summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+.control-icon {
+    fill: rebeccapurple;
+    transition: .3s ease;
+    pointer-events: none;
+}
+
+.control-icon-close {
+    display: none;
+}
+
+details[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+    display: none;
+}
+
+
+.faq-title {
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1% 42.5% 2% 42.5%;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+/* This is where  faq stuff ends*/
+/* -------------------------------*/
+/* -------------------------------*/
+/* This is where drop down button
+
+stuff begins*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 160px;
+}
+
+.dropdown-content button:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover #theButton3 {background-color: gray;}
+
+.hidden {
+    display: none;
+}
+
+

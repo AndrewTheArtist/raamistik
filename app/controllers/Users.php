@@ -12,7 +12,7 @@ class Users extends Controller
         $this->usersModel = $this->model('User');
     }
 
-    public function  register(){
+    public function register(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             $data = array(
@@ -76,7 +76,7 @@ class Users extends Controller
 
 
 
-    public function  login(){
+    public function login(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             $data = array(
@@ -101,7 +101,7 @@ class Users extends Controller
                 $loggedInUser = $this->usersModel->login($data['email'], $data['password']);
                 if($loggedInUser){
                     $this->createUserSession($loggedInUser);
-                    redirect('pages/index');
+                    redirect('partners/index');
                 } else {
                     $data['password_err'] = 'Password is incorrent';
                     $this->view('users/login', $data);
@@ -129,6 +129,11 @@ class Users extends Controller
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_name'] = $user->name;
         $_SESSION['user_email'] = $user->email;
+    }
+
+
+    public function faq(){
+        $this->view('users/faq');
     }
 
 
